@@ -1,7 +1,7 @@
 # docker-volume-export-import
 Docker Volumeのエクスポートとインポートの実験
 
-# 01.MySQL
+## 01.MySQL
 `start_mysql.sh`を実行する。
 
 ```
@@ -99,8 +99,8 @@ sample
 sys
 ```
 
-# Tips
-## `--volumes-from`
+## Tips
+### `--volumes-from`
 バックアップとリストアで鍵になっているのは、`docker run`のオプションのひとつとして指定されている`--volumes-from`です。
 
 ```
@@ -121,7 +121,7 @@ $ docker run --help
 
 リストア側で`tar`コマンドの`-C`オプションを使い展開先を指定することもできます。
 ルート直下に影響を及ぼす可能性があると困る場合は、`-C`オプションを使いましょう。
-# 参考
+## 参考
 - [Dockerのデータボリュームをバックアップ/リストアする](https://noumenon-th.net/programming/2019/04/04/backup/)  
 - [Use volumes
 ](https://docs.docker.com/storage/volumes/)
